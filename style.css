@@ -1,0 +1,127 @@
+:root{
+--color-header-gradient: linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(134,128,242,0.9) 85%); 	color:  #fff;
+}
+*{
+box-sizing: border-box;
+margin:  0;
+padding: 0;
+font-size: 14px;
+color: #000;
+}
+body{
+background-color: #8EC5FC;
+background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+/*corespara gradient #8680f2 e #000000*/
+.wrapper-nav{
+display: flex;
+align-items: center;
+height: 100%; /*100% da tag NAV para poder usar o align-items*/
+justify-content: center;
+}
+nav{
+background: rgb(0, 147, 233);
+font-weight: bold;
+height: 23vh;
+width: 100vw;
+}
+.logo{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+img{
+height: 23vh;
+width: 30vh;
+}
+.wrapper{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 2vh;
+}
+.wrapper-group{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.todo, .doing, .done{
+width: 30vw;
+margin: .5rem;
+}
+.todo-header, .doing-header, .done-header{
+display: flex;
+justify-content: center;
+justify-items: center;
+text-align: center;
+background: rgb(0, 147, 233);
+font-weight: bold;
+width: 100%;
+height: 3rem;
+}
+.postit{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+height: auto;
+margin: .5rem;
+border-radius: 1rem;
+
+ animation-duration: 3s;
+  animation-name: slidein;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-top: 200%;
+  }
+
+  to {
+    margin-top: .5rem;
+  }
+}
+
+.postit-todo{
+
+background-color: #f00404;
+background-image: linear-gradient( 135deg, #FDD819 10%, #E80505 100%);}
+
+.postit-doing{
+	background-color: #e4f004;
+background-image: linear-gradient( 135deg, #FFA8A8 10%, #FCFF00 100%);
+}
+
+.postit-done{
+	background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+}
+
+.postit:hover{
+opacity: .8;
+cursor: pointer;
+}
+.postit-header{
+height: 5vh;
+width: 100%;
+margin-top: .5rem;
+}
+.postit-todo-header{
+/*background: #ffad34;*/
+}
+.postit-doing-header{
+}
+.postit-done-header{
+}
+.postit-todo-content, .postit-doing-content, .postit-done-content{
+height: 5rem;
+padding: 1rem;
+margin: 0rem 0rem .5rem 0rem;
+}
+.postit-todo-content{
+/*background: #ffad34;*/
+}
+.postit-doing-content{}
+.postit-done-content{
+}
